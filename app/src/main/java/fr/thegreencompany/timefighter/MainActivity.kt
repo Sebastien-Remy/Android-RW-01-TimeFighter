@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.PersistableBundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
@@ -55,6 +57,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.d(TAG, "onCreate score is: $score")
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.actionAbout) {
+            showInfo()
+        }
+        return true
+    }
+
+    private fun showInfo() {
+        
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
