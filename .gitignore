@@ -40,5 +40,3 @@ build
 *~
 *.swp
 *.lock
-.gradle/6.5/executionHistory/executionHistory.lock
-*.lock
