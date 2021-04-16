@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:text="@string/tapMe"
+        android:textColor="@color/black"
         android:textColorLink="@color/black"
         app:backgroundTint="@color/buttonBackground"
         app:layout_constraintBottom_toBottomOf="parent"
